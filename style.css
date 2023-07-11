@@ -1,0 +1,489 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;400;600&display=swap');
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Kanit', sans-serif;
+}
+
+/* global css */
+img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.btn {
+  border-radius: 8px;
+  padding: 0.5rem 1.5rem;
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  cursor: pointer;
+  /* customize */
+  background-color: #1c2042;
+  color: white;
+  border: 2px solid #1c2042;
+}
+
+.food-company-container{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: left;
+  gap: 1rem;
+}
+.navbar-container{
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  padding: 0.5rem;
+  background-color: rgb(239, 254, 241);
+  
+}
+.menu-logo{
+  margin-left: 15rem;
+}
+.menu-logo{
+  width: 3rem;
+  margin-top: 2rem;
+}
+.navbar-bottom{
+  border: 2px solid rgb(243, 251, 243);
+  border-radius: 2px;
+}
+
+.header-img-container{ 
+  width: 25rem;
+  margin-left: 2.8rem;
+  margin-top: 7rem;
+}
+
+.offer-container{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  gap: 0.5rem;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.header-offer{
+  background-color: rgb(6, 110, 18);
+  border-color: aliceblue;
+  font-size: 1rem;
+}
+.heading-para{
+  color: rgb(149, 148, 148);
+}
+
+.header-explore{
+  background-color: rgb(218, 7, 7);
+  border-color: aliceblue;
+  font-weight: 600;
+}
+
+.header-explore:hover{
+  background-color: rgb(83, 4, 4);
+}
+
+.food-details-container{
+  display: flex;
+  flex-direction: center;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 5rem;
+  padding: 1rem;
+}
+
+.discount-details{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 5rem;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 300;
+  word-spacing: 1px;
+}
+
+.fresh-details{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 5rem;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.delivery-details{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 5rem;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.explore-menu-container{
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 3.2rem;
+}
+
+.our-menu{
+  background-color: rgb(6, 110, 18);
+  border-color: aliceblue;
+  font-size: 1.5rem;
+}
+.explore-menu{
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.explore-img-container{
+  width: 10rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+  padding: 1rem;
+  margin-left: 4rem;
+}
+
+.explore-img-2{
+  width: 8.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  gap: 0.2rem;
+  padding: 1rem;
+  margin-top: -6rem;
+  margin-left: 4rem;
+}
+
+.grid-img-1{
+  width: 13rem;
+}
+.grid-img-2{
+  width: 6.1rem;
+}
+.grid-img-3{
+  width: 8rem;
+  margin-top: -5rem;
+}
+.grid-img-7{
+  width: 8rem;
+  margin-top: -1rem;
+  margin-left: 1.1rem;
+}
+.footer{
+  background-color: rgb(245, 243, 241);
+  background: 2px solid rgb(240, 246, 238);
+  width: 50rem;
+}
+.footer-container{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  padding: 2rem;
+}
+
+.main-link{
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.main{
+  font-size: 1rem;
+  font-weight: 700;
+}
+.support-link{
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  margin-top: 1rem;
+}
+.support{
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.cta-mail-container{
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+.mail-address{
+  padding: 0.5rem 1rem;
+}
+.follow{
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-top: 1rem;
+}
+.social-media{
+  display: flex;
+  flex-direction: column;
+}
+.media-img{
+  width: 7rem;
+}
+
+@media screen and (min-width: 576px) {
+
+}
+
+/* Medium devices (tablets) */
+
+@media (min-width: 768px) {
+}
+
+/* Large devices (desktops) */
+
+@media (min-width: 991px) {
+  .food-company-container{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: left;
+  gap: 1rem;
+}
+.navbar-container{
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  padding: 0.5rem;
+  background-color: rgb(239, 254, 241);
+  width: 100rem;
+}
+.menu-logo{
+  margin-left: 75rem;
+}
+.menu-logo{
+  width: 3rem;
+  margin-top: 2rem;
+}
+.navbar-bottom{
+  border: 2px solid rgb(240, 245, 240);
+  border-radius: 2px;
+}
+
+.header-img-container{ 
+  width: 35rem;
+  margin-left: 2.8rem;
+  margin-top: 8rem;
+}
+
+.offer-container{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  gap: 0.5rem;
+  padding: 1rem;
+  margin-top: -28rem;
+  margin-left: 40rem;
+}
+
+.header-offer{
+  background-color: rgb(6, 110, 18);
+  border-color: aliceblue;
+  font-size: 1rem;
+}
+.heading{
+  font-size:4rem;
+  font-weight: 900;
+}
+.heading-para{
+  color: rgb(149, 148, 148);
+}
+
+.header-explore{
+  background-color: rgb(218, 7, 7);
+  border-color: aliceblue;
+  font-weight: 600;
+}
+
+.header-explore:hover{
+  background-color: rgb(83, 4, 4);
+}
+
+.food-details-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  gap: 18rem;
+  padding: 18rem;
+}
+
+.discount-details{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 5rem;
+  text-align: start;
+  font-size: 1rem;
+  font-weight: 300;
+  
+}
+
+.fresh-details{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 5rem;
+  text-align: start;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.delivery-details{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 5rem;
+  text-align: start;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.explore-menu-container{
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 3.2rem;
+  margin-left: 35rem;
+  margin-top: -13rem;
+}
+
+.our-menu{
+  background-color: rgb(6, 110, 18);
+  border-color: aliceblue;
+  font-size: 1.5rem;
+}
+.explore-menu{
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.explore-img-container{
+  width: 10rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+  padding: 1rem;
+  margin-left: 4rem;
+}
+
+.explore-img-2{
+  width: 8.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  gap: 0.2rem;
+  padding: 1rem;
+  margin-top: -6rem;
+  margin-left: 4rem;
+}
+
+.footer{
+  background-color: white;
+  width: 100rem;
+}
+.footer:hover{
+  background-color: #e5fbee;
+}
+.footer-container{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-around;
+  gap: 0.5rem;
+  padding: 1rem;
+}
+
+.main-link{
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.main{
+  font-size: 1rem;
+  font-weight: 700;
+}
+.support-link{
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  margin-top: 1rem;
+}
+.support{
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.cta-mail-container{
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+.mail-address{
+  padding: 0.5rem 1rem;
+}
+.follow{
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-top: 1rem;
+}
+.social-media{
+  display: flex;
+  flex-direction: column;
+}
+.media-img{
+  width: 7rem;
+}
+}
